@@ -36,10 +36,10 @@ const CityCard = props => {
         </Typography>
       </CardContent>
       <CardActions>
-        <IconButton aria-label="delete" onClick={deleteCity}>
+        <IconButton aria-label="delete" onClick={deleteCity} data-testid="delete_button">
             <DeleteIcon size="small"/>
         </IconButton>
-        <IconButton aria-label="refresh" onClick={reloadWeatherData}>
+        <IconButton aria-label="reload" onClick={reloadWeatherData} data-testid="reload_button">
             <RefreshIcon size="small"/>
         </IconButton>
         {reloadError && <Typography color="red">Failed to reload</Typography>}
