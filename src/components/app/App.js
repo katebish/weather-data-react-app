@@ -86,7 +86,7 @@ const App = () => {
           <TextField
             error={failedToFetch}
             helperText={failedToFetch && "Failed to find weather data for city"}
-            label="Outlined"
+            label="Search"
             name="city"
             onChange={handleCityChange}
             onKeyDown={({ key }) => {
